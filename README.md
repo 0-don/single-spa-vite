@@ -14,13 +14,13 @@ Then simply run the install command to finish the setup.
 pnpm install
 ```
 
-## Commands
-
 ### Start all packages
 
 ```bash
 pnpm start
 ```
+
+open [http://localhost:3000](http://localhost:3000)
 
 ### Build all packages
 
