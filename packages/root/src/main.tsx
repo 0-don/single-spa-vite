@@ -1,3 +1,4 @@
+import "import-map-overrides";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { getAppNames, registerApplication, start } from "single-spa";

@@ -11,6 +11,7 @@ export default defineConfig({
     react(),
     vitePluginSingleSpa({
       type: "root",
+      imo: false,
       imoUi: {
         variant: "full",
         buttonPos: "bottom-right",
