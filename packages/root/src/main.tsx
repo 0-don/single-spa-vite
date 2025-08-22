@@ -1,7 +1,7 @@
-import { getAppNames, registerApplication, start } from "single-spa";
-import apps from "./apps";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { getAppNames, registerApplication, start } from "single-spa";
+import apps from "./apps";
 
 apps.forEach(({ name, activeWhen }) =>
   registerApplication({

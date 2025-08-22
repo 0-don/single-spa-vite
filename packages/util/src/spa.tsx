@@ -7,7 +7,7 @@ const lc = singleSpaReact({
   React,
   ReactDOMClient,
   errorBoundary(err) {
-    return <div>Error: {JSON.stringify(err)}</div>;
+    return <>{err}</>;
   },
   rootComponent: () => null,
 });

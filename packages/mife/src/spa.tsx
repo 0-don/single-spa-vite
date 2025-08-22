@@ -10,6 +10,7 @@ const lc = singleSpaReact({
   errorBoundary(err) {
     return <>{err}</>;
   },
+  // loadRootComponent: async () => App,
   rootComponent: App,
 });
 
