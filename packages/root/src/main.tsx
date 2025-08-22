@@ -4,15 +4,15 @@ import { createRoot } from "react-dom/client";
 import { getAppNames, registerApplication, start } from "single-spa";
 import apps from "./apps";
 
-// Preload dev servers from import map
+// Preload dev servers from import map to fix HMR issues on first run
 if (import.meta.env.DEV) {
   import("./importMap.dev.json")
     .then(({ default: { imports } }) => {
       const servers = [
         ...new Set(
           Object.values(imports)
-            .filter((url: string) => url.includes("localhost"))
-            .map((url: string) => new URL(url).origin)
+            .filter((url) => url.includes("localhost"))
+            .map((url) => new URL(url).origin)
         ),
       ];
 
