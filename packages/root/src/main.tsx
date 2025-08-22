@@ -1,5 +1,7 @@
 import { getAppNames, registerApplication, start } from "single-spa";
 import apps from "./apps";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
 
 apps.forEach(({ name, activeWhen }) =>
   registerApplication({
@@ -17,3 +19,7 @@ if (import.meta.env.DEV) {
 }
 
 start();
+
+createRoot(document.getElementById("root")!).render(
+  <StrictMode>{/* INSERT ANY COMPONENTS TO MOUNT HERE */}</StrictMode>
+);

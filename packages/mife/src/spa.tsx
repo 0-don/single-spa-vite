@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOMClient from "react-dom/client";
 import singleSpaReact from "single-spa-react";
 import { cssLifecycleFactory } from "vite-plugin-single-spa/ex";
+import App from "./App";
 
 const lc = singleSpaReact({
   React,
@@ -9,12 +10,7 @@ const lc = singleSpaReact({
   errorBoundary(err) {
     return <>{err}</>;
   },
-  // use loadRootComponent attribute, instead of rootComponent, to ensure preamble code is injected into the root component before mounting.
-  // see vite.config.ts for details on the preamble.
-  loadRootComponent: async () => {
-    const { default: App } = await import("./App");
-    return App;
-  },
+  rootComponent: App,
 });
 
 // IMPORTANT:  Because the file is named spa.tsx, the string 'spa'

@@ -14,7 +14,7 @@ function App() {
           onClick={() => setCount((count) => count + 1)}
           style={{ fontSize: 16, padding: 10 }}
         >
-          !!{count}asddas
+          count: {count}
         </button>
       </div>
     </div>
