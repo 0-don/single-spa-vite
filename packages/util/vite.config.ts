@@ -7,8 +7,7 @@ const PORT = 3002;
 const APPLICATION_EXTERNALS: string[] = [];
 const NPM_EXTERNALS: string[] = [];
 
-export default defineConfig(({ command }) => ({
-  base: command === "serve" ? "/" : `http://localhost:${PORT}/`,
+export default defineConfig(() => ({
   plugins: [
     react({ reactRefreshHost: "http://localhost:3000" }),
     vitePluginSingleSpa({
