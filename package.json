@@ -1,0 +1,12 @@
+{
+  "name": "single-spa-vite-react-ts",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "rm -rf pnpm-lock.yaml node_modules packages/mife/node_modules packages/util/node_modules packages/root/node_modules && pnpm install && pnpm --recursive dev",
+    "start": "pnpm --recursive dev",
+    "build": "pnpm --recursive build",
+    "start:build": "pnpm --recursive start:build"
+  }
+}
