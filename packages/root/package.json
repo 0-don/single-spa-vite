@@ -10,15 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "19.1.1",
-    "react-dom": "19.1.1",
     "single-spa": "6.0.3",
     "import-map-overrides": "6.1.0"
   },
   "devDependencies": {
     "@eslint/js": "9.33.0",
-    "@types/react": "19.1.10",
-    "@types/react-dom": "19.1.7",
     "@vitejs/plugin-react-swc": "4.0.1",
     "eslint": "9.33.0",
     "eslint-plugin-react-hooks": "5.2.0",

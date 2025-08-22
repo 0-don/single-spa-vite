@@ -1,6 +1,4 @@
 import "import-map-overrides";
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
 import { getAppNames, registerApplication, start } from "single-spa";
 import apps from "./apps";
 
@@ -41,7 +39,3 @@ if (import.meta.env.DEV) {
 }
 
 start();
-
-createRoot(document.getElementById("root")!).render(
-  <StrictMode>{/* INSERT ANY COMPONENTS TO MOUNT HERE */}</StrictMode>
-);
