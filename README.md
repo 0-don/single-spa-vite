@@ -28,8 +28,8 @@ pnpm start
 pnpm build
 ```
 
-### Preview all built packages
+### Build docker
 
 ```bash
-pnpm start:build
+docker compose up --force-recreate --build
 ```
